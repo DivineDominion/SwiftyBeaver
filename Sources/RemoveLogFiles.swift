@@ -10,28 +10,19 @@ public protocol RemoveLogFiles: class {
     func removeLogFile(at url: URL) throws
 }
 
-public enum LogFileRemovalError: Error {
-    case trashingFailed(URL, wrapping: Error)
-    case removingFailed(URL, wrapping: Error)
+public struct LogFileRemovalError: Error {
+    let url: URL
+    let baseError: Error
 }
 
 import Foundation
 
 extension FileManager: RemoveLogFiles {
     public func removeLogFile(at url: URL) throws {
-        #if os(OSX)
-            do {
-                try trashItem(at: url, resultingItemURL: nil)
-            } catch {
-                throw LogFileRemovalError.trashingFailed(url, wrapping: error)
-            }
-        #else
-            // Remove file directly on non-Mac devices, even though FileManager supports trashing on iOS.
-            do {
-                try removeItem(at: url)
-            } catch {
-                throw LogFileRemovalError.removingFailed(url, wrapping: error)
-            }
-        #endif
+        do {
+            try removeItem(at: url)
+        } catch {
+            throw LogFileRemovalError(url: url, baseError: error)
+        }
     }
 }
