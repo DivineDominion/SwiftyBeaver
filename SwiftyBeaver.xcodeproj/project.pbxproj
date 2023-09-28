@@ -434,6 +434,7 @@
 				TargetAttributes = {
 					50D8F24C1FE27143006F3068 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1500;
 						ProvisioningStyle = Automatic;
 					};
 					9EDCE3E31C09D211002FA4A7 = {
@@ -672,7 +673,7 @@
 				PRODUCT_NAME = SwiftyBeaverTests;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -695,7 +696,7 @@
 				PRODUCT_NAME = SwiftyBeaverTests;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
