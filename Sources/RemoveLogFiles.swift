@@ -3,7 +3,7 @@
 //  Some rights reserved: http://opensource.org/licenses/MIT
 //
 
-public protocol RemoveLogFiles: class {
+public protocol RemoveLogFiles: AnyObject {
     /// Move to the trash if possible, or immediately delete the file from disk.
     ///
     /// - throws: `LogFileRemovalError`

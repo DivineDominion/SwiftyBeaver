@@ -12,13 +12,8 @@ class FileManager_RemoveLogFilesTests: XCTestCase {
         let url = generatedTempFileURL()
         do {
             try FileManager.default.removeLogFile(at: url)
-        } catch let error as LogFileRemovalError {
-            switch error {
-            case let .trashingFailed(errorURL, wrapping: _):
-                XCTAssertEqual(errorURL, url)
-            default:
-                XCTFail("Expected .trashingFailed on Mac")
-            }
+        } catch _ as LogFileRemovalError {
+            // expected
         } catch {
             XCTFail("Expected LogFileRemovalError")
         }

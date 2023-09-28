@@ -27,7 +27,7 @@ public struct LogDirectory {
     }
 }
 
-public protocol DirectoryInspector: class {
+public protocol DirectoryInspector: AnyObject {
     func directoryExists(at url: URL) -> Bool
 
     /// - returns: Unsorted collection of file URLs that are not themselves directories inside `url`.

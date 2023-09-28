@@ -18,7 +18,7 @@ import Foundation
 /// A filter can be required meaning that all required filters against a specific
 /// target must pass in order for the message to be logged. At least one non-required
 /// filter must pass in order for the message to be logged
-public protocol FilterType : class {
+public protocol FilterType : AnyObject {
     func apply(_ value: Any) -> Bool
     func getTarget() -> Filter.TargetType
     func isRequired() -> Bool
