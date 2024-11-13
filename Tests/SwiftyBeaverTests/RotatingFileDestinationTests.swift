@@ -598,7 +598,7 @@ fileprivate class DirectoryInspectorStub: DirectoryInspector {
 
     func remove(urls removedURLs: [URL]) {
         for url in removedURLs {
-            if let index = urls?.index(where: { $0 == url }) {
+            if let index = urls?.firstIndex(where: { $0 == url }) {
                 urls?.remove(at: index)
             }
         }
