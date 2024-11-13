@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftyBeaver",
+    platforms: [
+        .macOS(.v10_13),
+    ],
     products: [
         .library(name: "SwiftyBeaver", targets: ["SwiftyBeaver"])
     ],

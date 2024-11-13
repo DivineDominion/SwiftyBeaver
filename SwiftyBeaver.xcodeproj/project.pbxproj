@@ -12,6 +12,8 @@
 		4D331AE01F1E8EA700B1C25E /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D331ADE1F1E8E1100B1C25E /* Base64.swift */; };
 		4D331AE11F1E8EAB00B1C25E /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D331ADE1F1E8E1100B1C25E /* Base64.swift */; };
 		4D331AE21F1E8EAC00B1C25E /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D331ADE1F1E8E1100B1C25E /* Base64.swift */; };
+		50335D6A2CE50C5B00534985 /* TemporaryFileHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50335D692CE50C5B00534985 /* TemporaryFileHelpers.swift */; };
+		50335D6B2CE50C5B00534985 /* TemporaryFileHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50335D692CE50C5B00534985 /* TemporaryFileHelpers.swift */; };
 		50932F411FE4FE460023C5E3 /* RemoveLogFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50932F401FE4FE460023C5E3 /* RemoveLogFiles.swift */; };
 		50932F431FE520290023C5E3 /* RemoveLogFilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50932F421FE520290023C5E3 /* RemoveLogFilesTests.swift */; };
 		50D8F2521FE27143006F3068 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE597A61C18832E0031451F /* SwiftyBeaver.framework */; };
@@ -29,7 +31,6 @@
 		50D8F2671FE274B2006F3068 /* RotatingFileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8F2661FE274B2006F3068 /* RotatingFileDestination.swift */; };
 		50D8F2691FE4037D006F3068 /* LogDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8F2681FE4037D006F3068 /* LogDirectory.swift */; };
 		50D8F26C1FE403C4006F3068 /* LogDirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8F26A1FE403BE006F3068 /* LogDirectoryTests.swift */; };
-		50D8F26E1FE40549006F3068 /* TemporaryFileHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D8F26D1FE40549006F3068 /* TemporaryFileHelpers.swift */; };
 		9E2AEAD11D9BB46300F21B1F /* AES256CBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2AEAC81D9BB46300F21B1F /* AES256CBCTests.swift */; };
 		9E2AEAD21D9BB46300F21B1F /* BaseDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2AEAC91D9BB46300F21B1F /* BaseDestinationTests.swift */; };
 		9E2AEAD31D9BB46300F21B1F /* DestinationSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2AEACA1D9BB46300F21B1F /* DestinationSetTests.swift */; };
@@ -97,6 +98,7 @@
 /* Begin PBXFileReference section */
 		4D1720E71E9C083600AB7833 /* GoogleCloudDestinationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleCloudDestinationTests.swift; sourceTree = "<group>"; };
 		4D331ADE1F1E8E1100B1C25E /* Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
+		50335D692CE50C5B00534985 /* TemporaryFileHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFileHelpers.swift; sourceTree = "<group>"; };
 		50932F401FE4FE460023C5E3 /* RemoveLogFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveLogFiles.swift; sourceTree = "<group>"; };
 		50932F421FE520290023C5E3 /* RemoveLogFilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveLogFilesTests.swift; sourceTree = "<group>"; };
 		50D8F24D1FE27143006F3068 /* SwiftyBeaverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyBeaverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +108,6 @@
 		50D8F2661FE274B2006F3068 /* RotatingFileDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingFileDestination.swift; sourceTree = "<group>"; };
 		50D8F2681FE4037D006F3068 /* LogDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDirectory.swift; sourceTree = "<group>"; };
 		50D8F26A1FE403BE006F3068 /* LogDirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDirectoryTests.swift; sourceTree = "<group>"; };
-		50D8F26D1FE40549006F3068 /* TemporaryFileHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFileHelpers.swift; sourceTree = "<group>"; };
 		9E11A1DA1D92654E002112B6 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		9E195B101C6B766D00D924CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E2AEAC51D9BB43C00F21B1F /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LinuxMain.swift; path = Tests/LinuxMain.swift; sourceTree = "<group>"; };
@@ -202,7 +203,6 @@
 				9E2AEAC61D9BB44700F21B1F /* Info.plist */,
 				50D8F2581FE271F5006F3068 /* Info macOS.plist */,
 				9E2AEAC51D9BB43C00F21B1F /* LinuxMain.swift */,
-				50D8F26D1FE40549006F3068 /* TemporaryFileHelpers.swift */,
 				9E2AEAC41D9BB3E700F21B1F /* SwiftyBeaverTests */,
 			);
 			name = Tests;
@@ -217,6 +217,7 @@
 				9E2AEACB1D9BB46300F21B1F /* FileDestinationTests.swift */,
 				9E2AEACC1D9BB46300F21B1F /* FilterTests.swift */,
 				50D8F26A1FE403BE006F3068 /* LogDirectoryTests.swift */,
+				50335D692CE50C5B00534985 /* TemporaryFileHelpers.swift */,
 				50932F421FE520290023C5E3 /* RemoveLogFilesTests.swift */,
 				50D8F2621FE272A4006F3068 /* RotatingFileDestinationTests.swift */,
 				9E2AEACD1D9BB46300F21B1F /* SBPlatformDestinationTests.swift */,
@@ -535,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50335D6B2CE50C5B00534985 /* TemporaryFileHelpers.swift in Sources */,
 				50D8F26C1FE403C4006F3068 /* LogDirectoryTests.swift in Sources */,
 				50D8F2601FE27260006F3068 /* SwiftyBeaverTests.swift in Sources */,
 				50D8F25E1FE27260006F3068 /* SBPlatformDestinationTests.swift in Sources */,
@@ -547,7 +549,6 @@
 				50D8F25C1FE27260006F3068 /* FileDestinationTests.swift in Sources */,
 				50D8F2611FE27260006F3068 /* GoogleCloudDestinationTests.swift in Sources */,
 				50D8F25A1FE27260006F3068 /* BaseDestinationTests.swift in Sources */,
-				50D8F26E1FE40549006F3068 /* TemporaryFileHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +582,7 @@
 				9E2AEAD91D9BB46300F21B1F /* SwiftyBeaverTests.swift in Sources */,
 				4D1720E81E9C083600AB7833 /* GoogleCloudDestinationTests.swift in Sources */,
 				9E2AEAD21D9BB46300F21B1F /* BaseDestinationTests.swift in Sources */,
+				50335D6A2CE50C5B00534985 /* TemporaryFileHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
