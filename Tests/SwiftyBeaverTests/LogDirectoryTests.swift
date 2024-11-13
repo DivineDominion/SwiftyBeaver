@@ -121,7 +121,7 @@ class LogDirectoryTests: XCTestCase {
 }
 
 // Allows to throw string literals
-extension String: Error { }
+extension String: @retroactive Error { }
 
 fileprivate class DirectoryInspectorDouble: DirectoryInspector {
     var didCheckExistence: URL?
